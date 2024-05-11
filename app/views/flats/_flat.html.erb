@@ -1,0 +1,22 @@
+<div id="<%= dom_id flat %>">
+  <div class="card-product">
+    <div class="card-product-infos w-100 d-flex align-items-center justify-content-around">
+      <div>
+        <p>
+          <strong>Name:</strong>
+          <%= flat.name %>
+        </p>
+        <p>
+          <strong>Address:</strong>
+          <%= flat.address %>
+        </p>
+      </div>
+      <div class="flex-column">
+        <small>Lat: <%= flat.latitude %></small>
+        <br>
+        <small>Lng: <%= flat.longitude %></small>
+      </div>
+      <%= link_to "Show this flat", flat, class: "btn btn-sm btn-info" %>
+    </div>
+  </div>
+</div>
